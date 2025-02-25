@@ -10,13 +10,15 @@ export function TokenGrid() {
 
 function TokenCard() {
   return (
-    <div className="bg-[#2A1F3D] p-4 rounded-lg">
-      <div className="aspect-square bg-purple-900 rounded-lg mb-4" />
+    <div className="bg-[#081040] p-4 rounded-lg hover:bg-[#0A1550] transition-colors">
+      <div className="aspect-square bg-[#0A1550] rounded-lg mb-4" />
       <h3 className="font-bold">LOREM IPSUM TOKEN</h3>
-      <p className="text-sm text-gray-400">MADE BY: 0x.1234</p>
-      <p className="text-sm text-gray-400">13 MIN AGO</p>
-      <p className="text-sm text-gray-400">123 REPLIES</p>
-      <p className="text-green-400">$69.42K MCAP</p>
+      <p className="text-green-400 text-lg font-semibold mb-2">$69.42K MCAP</p>
+      <p className="text-gray-300 mb-3">A decentralized token for lorem ipsum generation and distribution across the Sui network.</p>
+      <div className="flex justify-between text-sm text-gray-400">
+        <p>13 MIN AGO</p>
+        <p>123 REPLIES</p>
+      </div>
     </div>
   );
 } 

@@ -2,6 +2,7 @@
 
 import { ConnectButton } from "@mysten/dapp-kit";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Header() {
   return (
@@ -20,9 +21,16 @@ export function Header() {
       </div>
 
       <div className="flex items-center gap-4">
-        <button className="bg-transparent border border-purple-500 text-white px-6 py-2 rounded-lg">
-          [launch a new coin]
-        </button>
+        <Link 
+          href="/launch" 
+          className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500 transition-colors flex items-center gap-2 font-medium"
+        >
+          <span>launch a new coin</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M5 12h14"></path>
+            <path d="m12 5 7 7-7 7"></path>
+          </svg>
+        </Link>
         <ConnectButton />
       </div>
     </nav>

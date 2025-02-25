@@ -9,7 +9,7 @@ import { TrendingTags } from "@/components/TrendingTags";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-[#0A061E] text-white p-4">
+    <main className="min-h-screen bg-[#050B2E] text-white p-4">
       <Header />
       <SpotlightCard />
       <SearchBar />
